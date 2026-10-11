@@ -1,0 +1,6 @@
+{
+  "name": "Quantum Horizon - Qiskit Fall Fest 2026",
+  "description": "Quantum Processor & Architecture Starter Notebook and Post-Quantum Secure Channel A/B Benchmark for Qiskit Fall Fest 2026 (Problem Statement P1).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

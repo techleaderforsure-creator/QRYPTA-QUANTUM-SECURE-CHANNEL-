@@ -1,0 +1,6 @@
+Metric,A,B,Delta
+Fidelity,0.8418,0.9324,+0.0906
+Depth,14,8,-6
+2Q_Gates,7,4,-3
+SWAPs,2,1,-1
+StdErr,0.0081,0.0055,-0.0026

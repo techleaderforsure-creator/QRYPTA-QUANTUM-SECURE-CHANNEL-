@@ -1,0 +1,29 @@
+{
+  "name": "processor_B",
+  "display_name": "Processor B (7-Qubit Heavy-Hex Inspired)",
+  "num_qubits": 7,
+  "coupling_map": [
+    [0, 1], [1, 0],
+    [1, 2], [2, 1],
+    [2, 3], [3, 2],
+    [3, 4], [4, 3],
+    [1, 5], [5, 1],
+    [5, 6], [6, 5],
+    [6, 3], [3, 6]
+  ],
+  "basis_gates": ["rz", "sx", "x", "cx"],
+  "ports": [0, 4],
+  "description": "7-qubit heavy-hex-inspired unit cell featuring an alternate routing bridge through ancilla nodes 5 and 6, reducing multi-qubit collision paths.",
+  "noise": {
+    "type": "challenge_defined",
+    "source": "official_challenge_kit",
+    "single_qubit_gate_error": 0.0006,
+    "two_qubit_gate_error": 0.008,
+    "readout_error": [
+      [0.992, 0.008],
+      [0.012, 0.988]
+    ],
+    "t1_us": 175.0,
+    "t2_us": 140.0
+  }
+}

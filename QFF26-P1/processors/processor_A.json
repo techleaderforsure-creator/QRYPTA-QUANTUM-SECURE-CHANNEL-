@@ -1,0 +1,26 @@
+{
+  "name": "processor_A",
+  "display_name": "Processor A (5-Qubit Line Baseline)",
+  "num_qubits": 5,
+  "coupling_map": [
+    [0, 1], [1, 0],
+    [1, 2], [2, 1],
+    [2, 3], [3, 2],
+    [3, 4], [4, 3]
+  ],
+  "basis_gates": ["rz", "sx", "x", "cx"],
+  "ports": [0, 4],
+  "description": "5-qubit linear nearest-neighbor architecture. Qubit 0 and 4 are terminal ports requiring 3 SWAP stages for long-range interactions.",
+  "noise": {
+    "type": "challenge_defined",
+    "source": "official_challenge_kit",
+    "single_qubit_gate_error": 0.001,
+    "two_qubit_gate_error": 0.015,
+    "readout_error": [
+      [0.985, 0.015],
+      [0.020, 0.980]
+    ],
+    "t1_us": 110.0,
+    "t2_us": 95.0
+  }
+}
